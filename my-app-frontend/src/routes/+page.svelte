@@ -1,5 +1,10 @@
 <script>
-  </script>
+    import { goto } from "$app/navigation";
+
+  function getStarted() {
+    goto('/register');
+  }
+</script>
   
   <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6">
     <!-- Logo Section -->
@@ -43,12 +48,7 @@
     <!-- Call to Action -->
     <div class="mt-12">
       <!-- Get Started Button with on:click to handle navigation -->
-      <button
-        on:click={handleGetStarted}
-        class="px-8 py-3 text-lg font-medium rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white shadow-lg transform transition-transform hover:scale-105"
-      >
-        Get Started
-      </button>
+    <button on:click={getStarted}>Get Started</button>
     </div>
   </div>
   
